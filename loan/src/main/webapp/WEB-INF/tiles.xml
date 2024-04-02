@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">          
+<tiles-definitions>  
+ 
+    <!-- Base Define -->
+    <definition name="base.definition" template="/WEB-INF/layouts/layout.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/basefragments/header.jsp" />  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/basefragments/footer.jsp" />  
+    </definition>  
+ 
+ 	<!-- Home Page  -->
+    <definition name="home" extends="base.definition">  
+        <put-attribute name="title" value="Home" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/home.jsp" />  
+    </definition>   
+    
+ 
+    
+     	<!-- Registration Page  -->
+    <definition name="registration" extends="base.definition">  
+        <put-attribute name="title" value="Registration" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/registration.jsp" />  
+    </definition>  
+    
+       <!-- User List View  -->
+    <definition name="userlist" extends="base.definition">  
+        <put-attribute name="title" value="User View List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/userlistview.jsp" />  
+    </definition> 
+     
+       
+         <!-- Login Page  -->
+    <definition name="login" extends="base.definition">  
+        <put-attribute name="title" value="Login" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/login.jsp" />  
+    </definition> 
+    
+    
+      	<!-- Product Page  -->
+    <definition name="otpview" extends="base.definition">  
+        <put-attribute name="title" value="otpview" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/otpview.jsp" />  
+    </definition>  
+    
+       <!-- Product List View  -->
+    <definition name="welcome" extends="base.definition">  
+        <put-attribute name="title" value="welcome"/>  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/welcome.jsp" />  
+    </definition>
+    
+    
+       
+      	<!-- Loan Page  -->
+    <definition name="loan" extends="base.definition">  
+        <put-attribute name="title" value="loan" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/loanview.jsp" />  
+    </definition>  
+    
+       <!-- Loan List View  -->
+    <definition name="loanlist" extends="base.definition">  
+        <put-attribute name="title" value="Loan List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/loanlistview.jsp" />  
+    </definition>
+   
+      	<!-- Loan Details  -->
+    <definition name="loandetails" extends="base.definition">  
+        <put-attribute name="title" value="Loan Details" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/loandetailsview.jsp" />  
+    </definition>  
+    
+      	<!-- Cibil Details  -->
+    <definition name="cibil" extends="base.definition">  
+        <put-attribute name="title" value="Cibil" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/cibilview.jsp" />  
+    </definition> 
+   
+</tiles-definitions> 
